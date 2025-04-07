@@ -1,0 +1,401 @@
+[ {
+  "chapterNumber" : 5,
+  "chapterTitle" : "General-purpose ai models\r",
+  "articles" : [ {
+    "articleNumber" : 1,
+    "articleID" : "5.1",
+    "articleTitle" : "Classification of general-purpose ai models as general-purpose ai models with systemic risk",
+    "paragraphs" : [ {
+      "paragraphNumber" : 1,
+      "paragraphID" : "5.1.1",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "Article 51\nClassification of general-purpose AI models as general-purpose AI models with systemic risk"
+      } ]
+    }, {
+      "paragraphNumber" : 2,
+      "paragraphID" : "5.1.2",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "1. A general-purpose AI model shall be classified as a general-purpose AI model with \nsystemic risk if it meets any of the following requirements:",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 2,
+        "text" : "(a) it has high impact capabilities evaluated on the basis of appropriate technical tools \nand methodologies, including indicators and benchmarks;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 3,
+        "text" : "(b) based on a decision of the Commission, ex officio or following a qualified alert \nfrom the scientific panel, it has capabilities or an impact equivalent to those set out \nin point (a) having regard to the criteria set out in Annex XIII."
+      } ]
+    }, {
+      "paragraphNumber" : 3,
+      "paragraphID" : "5.1.3",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "2. A general-purpose AI model shall be presumed to have high impact capabilities \npursuant to paragraph 1, point (a), when the cumulative amount of computation used \nfor its training measured in FLOPs is greater than 10^25."
+      } ]
+    }, {
+      "paragraphNumber" : 4,
+      "paragraphID" : "5.1.4",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "3. The Commission shall adopt delegated acts in accordance with Article 97 to amend the \nthresholds listed in paragraphs 2 and 3 of this Article, as well as to supplement \nbenchmarks and indicators in light of evolving technological developments, such as \nalgorithmic improvements or increased hardware efficiency, when necessary, for these \nthresholds to reflect the state of the art."
+      } ]
+    } ]
+  }, {
+    "articleNumber" : 2,
+    "articleID" : "5.2",
+    "articleTitle" : "Procedure",
+    "paragraphs" : [ {
+      "paragraphNumber" : 1,
+      "paragraphID" : "5.2.1",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "Article 52\nProcedure"
+      } ]
+    }, {
+      "paragraphNumber" : 2,
+      "paragraphID" : "5.2.2",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "1. Where a general-purpose AI model meets the requirement referred to in Article 51(1), \npoint (a), the relevant provider shall notify the Commission without delay and in any \nevent within two weeks after that requirement is met or it becomes known that it will be \nmet. That notification shall include the information necessary to demonstrate that the \nrelevant requirement has been met. If the Commission becomes aware of a general-\npurpose AI model presenting systemic risks of which it has not been notified, it may \ndecide to designate it as a model with systemic risk."
+      } ]
+    }, {
+      "paragraphNumber" : 3,
+      "paragraphID" : "5.2.3",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "2. The provider of a general purpose AI model that meets the requirement referred to in \nArticle 51(1), point (a), may present, with its notification, sufficiently substantiated \narguments to demonstrate that, exceptionally, although it meets that requirement, the \ngeneral purpose AI model does not present, due to its specific characteristics, systemic \nrisks and therefore should not be classified as a general-purpose AI model with systemic \nrisk."
+      } ]
+    }, {
+      "paragraphNumber" : 4,
+      "paragraphID" : "5.2.4",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "3. Where the Commission concludes that the arguments submitted pursuant to paragraph 2 \nare not sufficiently substantiated and the relevant provider was not able to demonstrate \nthat the general-purpose AI model does not present, due to its specific characteristics, \nsystemic risks, it shall reject those arguments, and the general-purpose AI model shall be \nconsidered to be a general-purpose AI model with systemic risk."
+      } ]
+    }, {
+      "paragraphNumber" : 5,
+      "paragraphID" : "5.2.5",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "4. The Commission may designate a general-purpose AI model as presenting systemic \nrisks, ex officio or following a qualified alert from the scientific panel pursuant to \nArticle 90(1), point (a), on the basis of criteria set out in Annex XIII. \nThe Commission shall adopt delegated acts in accordance with Article 97 to specify and \nupdate the criteria set out in Annex XIII."
+      } ]
+    }, {
+      "paragraphNumber" : 6,
+      "paragraphID" : "5.2.6",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "5. Upon a reasoned request of a provider whose model has been designated as a general-\npurpose AI model with systemic risk pursuant to paragraph 4, the Commission shall take \nthe request into account and may decide to reassess whether the general-purpose AI \nmodel can still be considered to present systemic risks on the basis of the criteria set out \nin Annex XIII. Such request shall contain objective, detailed and new reasons that have \narisen since the designation decision. Providers may request reassessment at the earliest \nsix months after the designation decision. Where the Commission, following its \nreassessment, decides to maintain the designation as a general-purpose AI model with \nsystemic risk, providers may request reassessment at the earliest six months after that \ndecision."
+      } ]
+    }, {
+      "paragraphNumber" : 7,
+      "paragraphID" : "5.2.7",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "6. The Commission shall ensure that a list of general-purpose AI models with systemic risk \nis published and shall keep that list up to date, without prejudice to the need to observe \nand protect intellectual property rights and confidential business information or trade \nsecrets in accordance with Union and national law.\nSection 2\nObligations for providers of general-purpose AI models"
+      } ]
+    } ]
+  }, {
+    "articleNumber" : 3,
+    "articleID" : "5.3",
+    "articleTitle" : "Obligations for providers of general-purpose ai models",
+    "paragraphs" : [ {
+      "paragraphNumber" : 1,
+      "paragraphID" : "5.3.1",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "Article 53\nObligations for providers of general-purpose AI models"
+      } ]
+    }, {
+      "paragraphNumber" : 2,
+      "paragraphID" : "5.3.2",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "1. Providers of general-purpose AI models shall:",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 2,
+        "text" : "(a) draw up and keep up-to-date the technical documentation of the model, including \nits training and testing process and the results of its evaluation, which shall \ncontain, at a minimum, the elements set out in Annex XI for the purpose of \nproviding it, upon request, to the AI Office and the national competent authorities;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 3,
+        "text" : "(b) draw up, keep up-to-date and make available information and documentation to \nproviders of AI systems who intend to integrate the general-purpose AI model into \ntheir AI systems. Without prejudice to the need to respect and protect intellectual \nproperty rights and confidential business information or trade secrets in \naccordance with Union and national law, the information and documentation \nshall:",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 4,
+        "text" : "(i) enable providers of AI systems to have a good understanding of the \ncapabilities and limitations of the general-purpose AI model and to comply \nwith their obligations pursuant to this Regulation; and\n(ii) contain, at a minimum, the elements set out in Annex XII;\n(i) enable providers of AI systems to have a good understanding of the \ncapabilities and limitations of the general-purpose AI model and to comply \nwith their obligations pursuant to this Regulation; and\n(ii) contain, at a minimum, the elements set out in Annex XII;",
+        "innerPoints" : [ {
+          "pointNumber" : 1,
+          "text" : "(i) enable providers of AI systems to have a good understanding of the \ncapabilities and limitations of the general-purpose AI model and to comply \nwith their obligations pursuant to this Regulation; and"
+        }, {
+          "pointNumber" : 2,
+          "text" : "(ii) contain, at a minimum, the elements set out in Annex XII;"
+        } ]
+      }, {
+        "pointNumber" : 5,
+        "text" : "(c) put in place a policy to comply with Union copyright law, and in particular to \nidentify and comply with, including through state of the art technologies, a \nreservation of rights expressed pursuant to Article 4(3) of Directive (EU) 2019/790;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 6,
+        "text" : "(d) draw up and make publicly available a sufficiently detailed summary about the \ncontent used for training of the general-purpose AI model, according to a template \nprovided by the AI Office."
+      } ]
+    }, {
+      "paragraphNumber" : 3,
+      "paragraphID" : "5.3.3",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "2. The obligations set out in paragraph 1, points (a) and (b), shall not apply to providers of \nAI models that are released under a free and open licence that allows for the access, \nusage, modification, and distribution of the model, and whose parameters, including the \nweights, the information on the model architecture, and the information on model \nusage, are made publicly available. This exception shall not apply to general-purpose AI \nmodels with systemic risks."
+      } ]
+    }, {
+      "paragraphNumber" : 4,
+      "paragraphID" : "5.3.4",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "3. Providers of general-purpose AI models shall cooperate as necessary with the \nCommission and the national competent authorities in the exercise of their competences \nand powers pursuant to this Regulation."
+      } ]
+    }, {
+      "paragraphNumber" : 5,
+      "paragraphID" : "5.3.5",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "4. Providers of general-purpose AI models may rely on codes of practice within the \nmeaning of Article 56 to demonstrate compliance with the obligations set out in \nparagraph 1 of this Article, until a harmonised standard is published. Providers who are \nin compliance with a European harmonised standard shall be presumed to be in \ncompliance with the obligations set out in paragraph 1 of this Article. Providers of \ngeneral-purpose AI models who do not adhere to an approved code of practice shall \ndemonstrate alternative adequate means of compliance for approval by the Commission."
+      } ]
+    }, {
+      "paragraphNumber" : 6,
+      "paragraphID" : "5.3.6",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "5. For the purpose of facilitating compliance with Annex XI, in particular points 2 (d) and",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 2,
+        "text" : "(e) thereof, the Commission shall adopt delegated acts in accordance with Article 97 to \ndetail measurement and calculation methodologies with a view to allowing for \ncomparable and verifiable documentation."
+      } ]
+    }, {
+      "paragraphNumber" : 7,
+      "paragraphID" : "5.3.7",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "6. The Commission shall adopt delegated acts in accordance with Article 97(2) to amend \nAnnexes XI and XII in the light of evolving technological developments."
+      } ]
+    }, {
+      "paragraphNumber" : 8,
+      "paragraphID" : "5.3.8",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "7. Any information or documentation obtained pursuant to this Article, including trade \nsecrets, shall be treated in compliance with the confidentiality obligations set out in \nArticle 78."
+      } ]
+    } ]
+  }, {
+    "articleNumber" : 4,
+    "articleID" : "5.4",
+    "articleTitle" : "Authorised representatives of providers of general-purpose ai models",
+    "paragraphs" : [ {
+      "paragraphNumber" : 1,
+      "paragraphID" : "5.4.1",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "Article 54\nAuthorised representatives of providers of general-purpose AI models"
+      } ]
+    }, {
+      "paragraphNumber" : 2,
+      "paragraphID" : "5.4.2",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "1. Prior to placing a general-purpose AI model on the Union market, providers established \nin third countries shall, by written mandate, appoint an authorised representative which \nis established in the Union."
+      } ]
+    }, {
+      "paragraphNumber" : 3,
+      "paragraphID" : "5.4.3",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "2. The provider shall enable its authorised representative to perform the tasks specified in \nthe mandate received from the provider."
+      } ]
+    }, {
+      "paragraphNumber" : 4,
+      "paragraphID" : "5.4.4",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "2. The authorised representative shall perform the tasks specified in the mandate received \nfrom the provider. It shall provide a copy of the mandate to the AI Office upon request, \nin one of the official languages of the institutions of the Union. For the purposes of this \nRegulation, the mandate shall empower the authorised representative to carry out the \nfollowing tasks:",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 2,
+        "text" : "(a) verify that the technical documentation specified in Annex XI has been drawn up \nand all obligations referred to in Articles 53 and, where applicable, Article 55 have \nbeen fulfilled by the provider;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 3,
+        "text" : "(b) keep a copy of the technical documentation specified in Annex XI at the disposal \nof the AI Office and national competent authorities, for a period of 10 years after \nthe general-purpose AI model has been placed on the market, and keep current the \ncontact details of the provider that appointed the authorised representative;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 4,
+        "text" : "(c) provide the AI Office, upon a reasoned request, with all the information and \ndocumentation, including that referred to in point (b), necessary to demonstrate its \ncompliance with the obligations in this Chapter;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 5,
+        "text" : "(d) cooperate with the AI Office and national competent authorities, upon a reasoned \nrequest, in any action the latter take in relation to a general-purpose AI model with \nsystemic risks, including when the model is integrated into AI systems placed on \nthe market or put into service in the Union."
+      } ]
+    }, {
+      "paragraphNumber" : 5,
+      "paragraphID" : "5.4.5",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "3. The mandate shall empower the authorised representative to be addressed, in addition to \nor instead of the provider, by the AI Office or the national competent authorities, on all \nissues related to ensuring compliance with this Regulation."
+      } ]
+    }, {
+      "paragraphNumber" : 6,
+      "paragraphID" : "5.4.6",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "4. The authorised representative shall terminate the mandate if it considers or has reason \nto consider the provider to be acting contrary to its obligations pursuant to this \nRegulation. In such a case, it shall also immediately inform the AI Office about the \ntermination of the mandate and the reasons therefor."
+      } ]
+    }, {
+      "paragraphNumber" : 7,
+      "paragraphID" : "5.4.7",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "5. The obligation set out in this Article shall not apply to providers of general-purpose AI \nmodels that are released under a free and open source licence that allows for the access, \nusage, modification, and distribution of the model, and whose parameters, including the \nweights, the information on the model architecture, and the information on model \nusage, are made publicly available, unless the general-purpose AI models present \nsystemic risks.\nSection 3\nObligations for providers of general-purpose AI models\n with systemic risk"
+      } ]
+    } ]
+  }, {
+    "articleNumber" : 5,
+    "articleID" : "5.5",
+    "articleTitle" : "Obligations for providers of general-purpose ai models with systemic risk",
+    "paragraphs" : [ {
+      "paragraphNumber" : 1,
+      "paragraphID" : "5.5.1",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "Article 55\nObligations for providers of general-purpose AI models with systemic risk"
+      } ]
+    }, {
+      "paragraphNumber" : 2,
+      "paragraphID" : "5.5.2",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "1. In addition to the obligations listed in Article 53, providers of general-purpose AI models \nwith systemic risk shall:",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 2,
+        "text" : "(a) perform model evaluation in accordance with standardised protocols and tools \nreflecting the state-of-the-art, including conducting and documenting adversarial \ntesting of the model with a view to identifying and mitigating systemic risk;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 3,
+        "text" : "(b) assess and mitigate possible systemic risks at Union level, including their sources, \nthat may stem from the development, the placing on the market, or the use of \ngeneral-purpose AI models with systemic risk;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 4,
+        "text" : "(c) keep track of, document and report without undue delay to the AI Office and, as \nappropriate, to national competent authorities, relevant information about serious \nincidents and possible corrective measures to address them;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 5,
+        "text" : "(d) ensure an adequate level of cybersecurity protection for the general-purpose AI \nmodel with systemic risk and the physical infrastructure of the model."
+      } ]
+    }, {
+      "paragraphNumber" : 3,
+      "paragraphID" : "5.5.3",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "2. Providers of general-purpose AI models with systemic risk may rely on codes of practice \nwithin the meaning of Article 56 to demonstrate compliance with the obligations set out \nin paragraph 1 of this Article, until a harmonised standard is published. Providers who \nare in compliance with a European harmonised standard shall be presumed to be in \ncompliance with the obligations set out in paragraph 1 of this Article. Providers of \ngeneral-purpose AI models with systemic risks who do not adhere to an approved code of \npractice shall demonstrate alternative adequate means of compliance for approval by the \nCommission."
+      } ]
+    }, {
+      "paragraphNumber" : 4,
+      "paragraphID" : "5.5.4",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "3. Any information or documentation obtained pursuant to this Article, including trade \nsecrets, shall be treated in compliance with the confidentiality obligations set out in \nArticle 78."
+      } ]
+    } ]
+  }, {
+    "articleNumber" : 6,
+    "articleID" : "5.6",
+    "articleTitle" : "Codes of practice",
+    "paragraphs" : [ {
+      "paragraphNumber" : 1,
+      "paragraphID" : "5.6.1",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "Article 56\nCodes of practice"
+      } ]
+    }, {
+      "paragraphNumber" : 2,
+      "paragraphID" : "5.6.2",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "1. The AI Office shall encourage and facilitate the drawing up of codes of practice at \nUnion level in order to contribute to the proper application of this Regulation, taking \ninto account international approaches."
+      } ]
+    }, {
+      "paragraphNumber" : 3,
+      "paragraphID" : "5.6.3",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "2. The AI Office and the Board shall aim to ensure that the codes of practice cover at least \nthe obligations provided for in Articles 53 and 55, including the following issues:",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 2,
+        "text" : "(a) means to ensure that the information referred to in Article 53(1), points (a) and (b), \nis kept up to date in the light of market and technological developments;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 3,
+        "text" : "(b) the adequate level of detail for the summary about the content used for training;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 4,
+        "text" : "(c) the identification of the type and nature of the systemic risks at Union level, \nincluding their sources, where appropriate;",
+        "innerPoints" : [ ]
+      }, {
+        "pointNumber" : 5,
+        "text" : "(d) the measures, procedures and modalities for the assessment and management of \nthe systemic risks at Union level, including the documentation thereof, which shall \nbe proportionate to the risks, take into consideration their severity and probability \nand take into account the specific challenges of tackling those risks in the light of \nthe possible ways in which such risks may emerge and materialise along the AI \nvalue chain."
+      } ]
+    }, {
+      "paragraphNumber" : 4,
+      "paragraphID" : "5.6.4",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "3. The AI Office may invite all providers of general-purpose AI models, as well as relevant \nnational competent authorities, to participate in the drawing-up of codes of practice. \nCivil society organisations, industry, academia and other relevant stakeholders, such as \ndownstream providers and independent experts, may support the process."
+      } ]
+    }, {
+      "paragraphNumber" : 5,
+      "paragraphID" : "5.6.5",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "4. The AI Office and the Board shall aim to ensure that the codes of practice clearly set out \ntheir specific objectives and contain commitments or measures, including key \nperformance indicators as appropriate, to ensure the achievement of those objectives, \nand that they take due account of the needs and interests of all interested parties, \nincluding affected persons, at Union level."
+      } ]
+    }, {
+      "paragraphNumber" : 6,
+      "paragraphID" : "5.6.6",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "5. The AI Office shall aim to ensure that participants to the codes of practice report \nregularly to the AI Office on the implementation of the commitments and the measures \ntaken and their outcomes, including as measured against the key performance indicators \nas appropriate. Key performance indicators and reporting commitments shall reflect \ndifferences in size and capacity between various participants."
+      } ]
+    }, {
+      "paragraphNumber" : 7,
+      "paragraphID" : "5.6.7",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "6. The AI Office and the Board shall regularly monitor and evaluate the achievement of \nthe objectives of the codes of practice by the participants and their contribution to the \nproper application of this Regulation. The AI Office and the Board shall assess whether \nthe codes of practice cover the obligations provided for in Articles 53 and 55, as well as \nthe issues listed in paragraph 2 of this Article, and shall regularly monitor and evaluate \nthe achievement of their objectives. They shall publish their assessment of the adequacy \nof the codes of practice. \nThe Commission may, by way of an implementing act, approve a code of practice and \ngive it a general validity within the Union. That implementing act shall be adopted in \naccordance with the examination procedure referred to in Article 98(2)."
+      } ]
+    }, {
+      "paragraphNumber" : 8,
+      "paragraphID" : "5.6.8",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "7. The AI Office may invite all providers of general-purpose AI models to adhere to the \ncodes of practice. For providers of general-purpose AI models not presenting systemic \nrisks this adherence may be limited to the obligations provided for in Article 53, unless \nthey declare explicitly their interest to join the full code."
+      } ]
+    }, {
+      "paragraphNumber" : 9,
+      "paragraphID" : "5.6.9",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "8. The AI Office shall, as appropriate, also encourage and facilitate the review and \nadaptation of the codes of practice, in particular in the light of emerging standards. The \nAI Office shall assist in the assessment of available standards."
+      } ]
+    }, {
+      "paragraphNumber" : 10,
+      "paragraphID" : "5.6.10",
+      "text" : [ {
+        "pointNumber" : 1,
+        "text" : "9. Codes of practice shall be ready at the latest by … [nine months from the date of entry into \nforce of this Regulation]. The AI Office shall take the necessary steps, including inviting \nproviders pursuant to paragraph 7. \nIf, by ... [12 months from the date of entry into force], a code of practice cannot be \nfinalised, or if the AI Office deems it is not adequate following its assessment under \nparagraph 6 of this Article, the Commission may provide, by means of implementing \nacts, common rules for the implementation of the obligations provided for in Articles 53 \nand 55, including the issues set out in paragraph 2 of this Article. Those implementing \nacts shall be adopted in accordance with the examination procedure referred to in \nArticle 98(2)."
+      } ]
+    } ]
+  } ]
+} ]

@@ -1,0 +1,1170 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:y="http://www.yworks.com/xml/graphml">
+  <key id="d0" for="node" attr.name="label" attr.type="string"/>
+  <key id="d1" for="edge" attr.name="label" attr.type="string"/>
+  <key id="d2" for="edge" attr.name="paragraph_id" attr.type="string"/>
+  <graph edgedefault="directed">
+    <node id="academia">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>academia</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="ai office">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>ai office</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="annex xi">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>annex xi</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="any information or documentation obtained pursuant to this article">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>any information or documentation obtained pursuant to this article</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="arguments submitted pursuant to paragraph 2">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>arguments submitted pursuant to paragraph 2</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="article 78">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>article 78</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="authorised representative">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>authorised representative</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="authorised representatives">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>authorised representatives</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="benchmarks and indicators">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>benchmarks and indicators</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="civil society organisations">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>civil society organisations</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="codes of practice">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>codes of practice</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="codes of practice within the meaning of article 56">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>codes of practice within the meaning of article 56</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="commission">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>commission</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="criteria set out in annex xiii">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>criteria set out in annex xiii</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="general-purpose ai model">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>general-purpose ai model</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="general-purpose ai model with systemic risk">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>general-purpose ai model with systemic risk</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="general-purpose ai models">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>general-purpose ai models</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="industry">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>industry</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="obligations provided for in articles 53 and 55">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>obligations provided for in articles 53 and 55</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="paragraphs 2 and 3 of this article">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>paragraphs 2 and 3 of this article</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="participants">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>participants</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="participants to the codes of practice">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>participants to the codes of practice</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="provider of a general purpose ai model">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>provider of a general purpose ai model</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="providers established in third countries">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>providers established in third countries</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="providers of ai models">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>providers of ai models</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="providers of general-purpose ai models">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>providers of general-purpose ai models</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="providers of general-purpose ai models not presenting systemic risks">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>providers of general-purpose ai models not presenting systemic risks</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="providers of general-purpose ai models who do not adhere to an approved code of practice">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>providers of general-purpose ai models who do not adhere to an approved code of practice</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="providers of general-purpose ai models with systemic risk">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>providers of general-purpose ai models with systemic risk</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="providers of general-purpose ai models with systemic risks who do not adhere to an approved code of practice">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>providers of general-purpose ai models with systemic risks who do not adhere to an approved code of practice</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="providers who are in compliance with a european harmonised standard">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>providers who are in compliance with a european harmonised standard</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="relevant provider">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>relevant provider</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="relevant stakeholders">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>relevant stakeholders</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="six months after that decision">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>six months after that decision</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="six months after the designation decision">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>six months after the designation decision</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="process for drawing up codes of practice">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>process for drawing up codes of practice</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="available standards">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>available standards</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="board">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>board</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="key performance indicators">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>key performance indicators</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="national competent authorities">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>national competent authorities</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="comparison and verifiability">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>comparison and verifiability</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="confidentiality obligations set out in article 78">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>confidentiality obligations set out in article 78</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="information or documentation obtained pursuant to this article">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>information or documentation obtained pursuant to this article</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="provider">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>provider</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="achievement of objectives">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>achievement of objectives</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="articles 53 and 55">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>articles 53 and 55</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="interested parties (union level)">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>interested parties (union level)</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="annexes xi and xii">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>annexes xi and xii</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="approval of code of practice">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>approval of code of practice</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="delegated acts">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>delegated acts</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="delegated acts in accordance with article 97">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>delegated acts in accordance with article 97</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="general-purpose ai model presenting systemic risks">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>general-purpose ai model presenting systemic risks</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="list of general-purpose ai models with systemic risk">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>list of general-purpose ai models with systemic risk</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="measurement and calculation methodologies">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>measurement and calculation methodologies</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="scientific panel pursuant to article 90(1), point (a)">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>scientific panel pursuant to article 90(1), point (a)</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="high impact capabilities">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>high impact capabilities</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="provider of general-purpose ai models">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>provider of general-purpose ai models</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="systemic risk">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>systemic risk</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="systemic risks">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>systemic risks</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="(a) means to ensure that the information referred to in article 53(1), points (a) and (b), &#10;is kept up to date in the light of market and technological developments">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>(a) means to ensure that the information referred to in article 53(1), points (a) and (b), 
+is kept up to date in the light of market and technological developments</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="(b) the adequate level of detail for the summary about the content used for training">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>(b) the adequate level of detail for the summary about the content used for training</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="(c) the identification of the type and nature of the systemic risks at union level, &#10;including their sources">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>(c) the identification of the type and nature of the systemic risks at union level, 
+including their sources</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="(d) the measures, procedures and modalities for the assessment and management of &#10;the systemic risks at union level, including the documentation thereof, which shall &#10;be proportionate to the risks, take into consideration their severity and probability &#10;and take into account the specific challenges of tackling those risks in the light of &#10;the possible ways in which such risks may emerge and materialise along the ai &#10;value chain.">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>(d) the measures, procedures and modalities for the assessment and management of 
+the systemic risks at union level, including the documentation thereof, which shall 
+be proportionate to the risks, take into consideration their severity and probability 
+and take into account the specific challenges of tackling those risks in the light of 
+the possible ways in which such risks may emerge and materialise along the ai 
+value chain.</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="thresholds listed in paragraphs 2 and 3 of this article">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>thresholds listed in paragraphs 2 and 3 of this article</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="reporting commitments">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>reporting commitments</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="authorised representative established in the union">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>authorised representative established in the union</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="access">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>access</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="distribution">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>distribution</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="free and open licence">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>free and open licence</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="modification">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>modification</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="usage">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>usage</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="ai systems">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>ai systems</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="harmonised standard">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>harmonised standard</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="presumption of compliance">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>presumption of compliance</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="providers of ai systems">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>providers of ai systems</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="training data">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>training data</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="union copyright law compliance policy">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>union copyright law compliance policy</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="alternative adequate means of compliance">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>alternative adequate means of compliance</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="obligations set out in paragraph 1 of this article">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>obligations set out in paragraph 1 of this article</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <edge source="academia" target="process for drawing up codes of practice">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Support</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.4</data>
+    </edge>
+    <edge source="ai office" target="available standards">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Assists in assessment</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.9</data>
+    </edge>
+    <edge source="ai office" target="board">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Aim to ensure,Collaboration to ensure clear objectives in codes of practice,Regularly monitor and evaluate</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.3,5.6.5,5.6.7</data>
+    </edge>
+    <edge source="ai office" target="codes of practice">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Encourages and facilitates drawing up,Encourages and facilitates review and adaptation</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.2,5.6.9</data>
+    </edge>
+    <edge source="ai office" target="key performance indicators">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Ensures reflection</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.6</data>
+    </edge>
+    <edge source="ai office" target="national competent authorities">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Invites for drawing up codes of practice</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.4</data>
+    </edge>
+    <edge source="ai office" target="participants to the codes of practice">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Reports regularily</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.6</data>
+    </edge>
+    <edge source="ai office" target="providers of general-purpose ai models">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Mandatory technical documentation provision for regulatory compliance</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.2</data>
+    </edge>
+    <edge source="ai office" target="authorised representative">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>provide copy of mandate upon request (one of official languages),cooperate with AI Office and national competent authorities upon request,Addressee for compliance issues,Informs</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.4.4,5.4.4,5.4.5,5.4.6</data>
+    </edge>
+    <edge source="annex xi" target="comparison and verifiability">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Allows for</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.6</data>
+    </edge>
+    <edge source="annex xi" target="commission">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Facilitates compliance with</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.6</data>
+    </edge>
+    <edge source="any information or documentation obtained pursuant to this article" target="confidentiality obligations set out in article 78">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Subject to</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.5.4</data>
+    </edge>
+    <edge source="arguments submitted pursuant to paragraph 2" target="general-purpose ai model with systemic risk">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Lack of sufficient substantiation for</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.4</data>
+    </edge>
+    <edge source="article 78" target="information or documentation obtained pursuant to this article">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Confidentiality obligations</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.8</data>
+    </edge>
+    <edge source="authorised representative" target="national competent authorities">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>keep copy of technical documentation at disposal for 10 years,Addressee for compliance issues</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.4.4,5.4.5</data>
+    </edge>
+    <edge source="authorised representative" target="provider">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>verify technical documentation and fulfil obligations,Considers acting contrary to obligations</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.4.4,5.4.6</data>
+    </edge>
+    <edge source="authorised representatives" target="providers of general-purpose ai models">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Represents</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.4.1</data>
+    </edge>
+    <edge source="benchmarks and indicators" target="commission">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Supplements</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.1.4</data>
+    </edge>
+    <edge source="civil society organisations" target="process for drawing up codes of practice">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Support</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.4</data>
+    </edge>
+    <edge source="codes of practice" target="achievement of objectives">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Regularly monitor and evaluate</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.7</data>
+    </edge>
+    <edge source="codes of practice" target="articles 53 and 55">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Cover at least</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.3</data>
+    </edge>
+    <edge source="codes of practice" target="interested parties (union level)">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Consideration of needs and interests</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.5</data>
+    </edge>
+    <edge source="codes of practice" target="providers of general-purpose ai models not presenting systemic risks">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Adherence</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.8</data>
+    </edge>
+    <edge source="codes of practice within the meaning of article 56" target="providers of general-purpose ai models with systemic risk">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>May rely on to demonstrate compliance with the obligations set out 
+in paragraph 1 of this Article</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.5.3</data>
+    </edge>
+    <edge source="commission" target="annexes xi and xii">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Amends in accordance with Article 97(2)</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.7</data>
+    </edge>
+    <edge source="commission" target="approval of code of practice">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Implementing act</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.7</data>
+    </edge>
+    <edge source="commission" target="delegated acts">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Issues</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.1.4</data>
+    </edge>
+    <edge source="commission" target="delegated acts in accordance with article 97">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Adopts to specify and update criteria set out in Annex XIII</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.5</data>
+    </edge>
+    <edge source="commission" target="general-purpose ai model presenting systemic risks">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Designates</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.5</data>
+    </edge>
+    <edge source="commission" target="general-purpose ai model with systemic risk">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Reassessment,Decides to maintain the designation as a general-purpose AI model with 
+systemic risks</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.6,5.2.6</data>
+    </edge>
+    <edge source="commission" target="list of general-purpose ai models with systemic risk">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Publishes and keeps up to date without prejudice to intellectual property rights and confidential business information or trade secrets in accordance with Union and national law.</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.7</data>
+    </edge>
+    <edge source="commission" target="measurement and calculation methodologies">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Shall adopt delegated acts to detail</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.6</data>
+    </edge>
+    <edge source="commission" target="provider">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Upon a reasoned request,Following its reassessment</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.6,5.2.6</data>
+    </edge>
+    <edge source="commission" target="scientific panel pursuant to article 90(1), point (a)">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Receives qualified alert from</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.5</data>
+    </edge>
+    <edge source="commission" target="paragraphs 2 and 3 of this article">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Amends</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.1.4</data>
+    </edge>
+    <edge source="commission" target="providers of general-purpose ai models">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Cooperate with</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.4</data>
+    </edge>
+    <edge source="commission" target="providers of general-purpose ai models with systemic risk">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Demonstrate alternative adequate means of compliance for approval</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.5.3</data>
+    </edge>
+    <edge source="commission" target="providers of general-purpose ai models with systemic risks who do not adhere to an approved code of practice">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Demonstrate alternative adequate means of compliance for approval by the</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.5.3</data>
+    </edge>
+    <edge source="criteria set out in annex xiii" target="general-purpose ai model with systemic risk">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Based on</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.6</data>
+    </edge>
+    <edge source="general-purpose ai model" target="high impact capabilities">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Presumed to have when training exceeds 10^25 FLOPs</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.1.3</data>
+    </edge>
+    <edge source="general-purpose ai model" target="provider of general-purpose ai models">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Provides</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.1</data>
+    </edge>
+    <edge source="general-purpose ai model" target="systemic risk">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Classified as</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.1.1</data>
+    </edge>
+    <edge source="general-purpose ai model with systemic risk" target="relevant provider">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Inability to demonstrate</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.4</data>
+    </edge>
+    <edge source="general-purpose ai models" target="systemic risks">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Exceptions do not apply to</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.3</data>
+    </edge>
+    <edge source="general-purpose ai models" target="providers of general-purpose ai models">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Applies to</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.7</data>
+    </edge>
+    <edge source="industry" target="process for drawing up codes of practice">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Support</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.4</data>
+    </edge>
+    <edge source="obligations provided for in articles 53 and 55" target="(a) means to ensure that the information referred to in article 53(1), points (a) and (b), &#10;is kept up to date in the light of market and technological developments">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Include</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.3</data>
+    </edge>
+    <edge source="obligations provided for in articles 53 and 55" target="(b) the adequate level of detail for the summary about the content used for training">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Include</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.3</data>
+    </edge>
+    <edge source="obligations provided for in articles 53 and 55" target="(c) the identification of the type and nature of the systemic risks at union level, &#10;including their sources">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Include</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.3</data>
+    </edge>
+    <edge source="obligations provided for in articles 53 and 55" target="(d) the measures, procedures and modalities for the assessment and management of &#10;the systemic risks at union level, including the documentation thereof, which shall &#10;be proportionate to the risks, take into consideration their severity and probability &#10;and take into account the specific challenges of tackling those risks in the light of &#10;the possible ways in which such risks may emerge and materialise along the ai &#10;value chain.">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Include</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.3</data>
+    </edge>
+    <edge source="paragraphs 2 and 3 of this article" target="thresholds listed in paragraphs 2 and 3 of this article">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Are</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.1.4</data>
+    </edge>
+    <edge source="participants" target="achievement of objectives">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Regularly monitor and evaluate</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.7</data>
+    </edge>
+    <edge source="participants to the codes of practice" target="reporting commitments">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Reflect differences in size and capacity</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.6</data>
+    </edge>
+    <edge source="provider of a general purpose ai model" target="systemic risks">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Exceptionally does not present due to specific characteristics</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.3</data>
+    </edge>
+    <edge source="providers established in third countries" target="authorised representative established in the union">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Appoints by written mandate</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.4.2</data>
+    </edge>
+    <edge source="providers of ai models" target="access">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>To</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.3</data>
+    </edge>
+    <edge source="providers of ai models" target="distribution">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Of</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.3</data>
+    </edge>
+    <edge source="providers of ai models" target="free and open licence">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Release under</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.3</data>
+    </edge>
+    <edge source="providers of ai models" target="modification">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>To</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.3</data>
+    </edge>
+    <edge source="providers of ai models" target="usage">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>To</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.3</data>
+    </edge>
+    <edge source="providers of general-purpose ai models" target="ai systems">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Compatibility</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.2</data>
+    </edge>
+    <edge source="providers of general-purpose ai models" target="harmonised standard">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Reliance on codes of practice</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.5</data>
+    </edge>
+    <edge source="providers of general-purpose ai models" target="national competent authorities">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Mandatory technical documentation provision for regulatory compliance,Cooperate with</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.2,5.3.4</data>
+    </edge>
+    <edge source="providers of general-purpose ai models" target="presumption of compliance">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Meaning of Article 56</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.5</data>
+    </edge>
+    <edge source="providers of general-purpose ai models" target="providers of ai systems">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Availability of model information for AI system integration</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.2</data>
+    </edge>
+    <edge source="providers of general-purpose ai models" target="systemic risk">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Cause</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.5.1</data>
+    </edge>
+    <edge source="providers of general-purpose ai models" target="training data">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Content summary disclosure</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.2</data>
+    </edge>
+    <edge source="providers of general-purpose ai models" target="union copyright law compliance policy">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Implementation</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.2</data>
+    </edge>
+    <edge source="providers of general-purpose ai models who do not adhere to an approved code of practice" target="alternative adequate means of compliance">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Approval by the Commission</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.5</data>
+    </edge>
+    <edge source="providers of general-purpose ai models with systemic risk" target="harmonised standard">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Rely on until publication</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.5.3</data>
+    </edge>
+    <edge source="providers who are in compliance with a european harmonised standard" target="obligations set out in paragraph 1 of this article">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Presumed to be in compliance with</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.5.3</data>
+    </edge>
+    <edge source="providers who are in compliance with a european harmonised standard" target="presumption of compliance">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Paragraph 1 of this Article</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.3.5</data>
+    </edge>
+    <edge source="relevant stakeholders" target="process for drawing up codes of practice">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>Support</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.6.4</data>
+    </edge>
+    <edge source="six months after that decision" target="provider">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>May request reassessment at the earliest</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.6</data>
+    </edge>
+    <edge source="six months after the designation decision" target="provider">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>May request reassessment at the earliest</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">5.2.6</data>
+    </edge>
+  </graph>
+</graphml>
