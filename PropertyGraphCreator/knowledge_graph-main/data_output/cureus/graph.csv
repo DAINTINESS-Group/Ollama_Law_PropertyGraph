@@ -1,0 +1,36 @@
+node_1|node_2|edge|paragraph_id|chunk_id
+article 51|general-purpose ai models with systemic risk|Classification as|5.1.1|5.1.1
+general-purpose ai model|paragraph 1, point (a)|Has high impact capabilities (presumptively)|5.1.3|5.1.3
+cumulative amount of computation used for training|general-purpose ai model|Exceeds 10^25 FLOPs|5.1.3|5.1.3
+commission|delegated acts|Adopts|5.1.4|5.1.4
+commission|article 97|Shall adopt delegated acts in accordance with|5.1.4|5.1.4
+general-purpose ai model|commission|Notifies|5.2.2|5.2.2
+general-purpose ai model|commission|Systemic risks identified by|5.2.2|5.2.2
+commission|general-purpose ai model presenting systemic risks|Designates ex officio or following a qualified alert from the scientific panel pursuant to Article 90(1), point (a)|5.2.5|5.2.5
+commission|list of general-purpose ai models with systemic risk|Publishes and keeps up to date|5.2.7|5.2.7
+providers of general-purpose ai models|ai office|Required to provide technical documentation upon request|5.3.2|5.3.2
+providers of general-purpose ai models|providers of ai systems|Required to have a good understanding and comply with obligations pursuant to this Regulation|5.3.2|5.3.2
+providers of general-purpose ai models|national competent authorities|Required to provide technical documentation upon request|5.3.2|5.3.2
+providers of general-purpose ai models|state of the art technologies|Required to identify and comply with reservations of rights expressed pursuant to Article 4(3) of Directive (EU) 2019/790|5.3.2|5.3.2
+providers of general-purpose ai models|sufficiently detailed summary about the content used for training of the general-purpose ai model|Required to be made publicly available according to a template provided by the AI Office|5.3.2|5.3.2
+free and open licence|providers of ai models|Released under|5.3.3|5.3.3
+general-purpose ai models|systemic risks|Exceptions do not apply to|5.3.3|5.3.3
+providers of general-purpose ai models|harmonised standard|Reliance until publication|5.3.5|5.3.5
+providers of general-purpose ai models|european harmonised standard|Presumed compliance|5.3.5|5.3.5
+providers who are not in compliance with an approved code of practice|alternative adequate means of compliance|Demonstration for approval by the Commission|5.3.5|5.3.5
+providers established in third countries|authorised representative established in the union|Appoints by written mandate|5.4.2|5.4.2
+authorised representative|ai office or national competent authorities|Addressed on all issues related to ensuring compliance with this Regulation.|5.4.5|5.4.5
+authorised representative|provider|Terminates mandate due to contrary actions|5.4.6|5.4.6
+providers of general-purpose ai models|systemic risk|Obligations for|5.5.1|5.5.1
+article 78|confidentiality obligations set out in article 78|Applies to|5.5.4|5.5.4
+ai office|codes of practice|Encourages and Facilitates Drawing Up at Union Level|5.6.2|5.6.2
+ai office|codes of practice|ensure coverage of obligations provided for in Articles 53 and 55|5.6.3|5.6.3
+ai office|issues: (a), (b), (c), (d)|cover|5.6.3|5.6.3
+articles 53 and 55|codes of practice|coverage|5.6.3|5.6.3
+article 53(1), points (a) and (b)|information|keeping up to date|5.6.3|5.6.3
+ai systemic risks at union level|identification|included|5.6.3|5.6.3
+ai systemic risks at union level|sources|identified|5.6.3|5.6.3
+assessment and management of ai systemic risks at union level|measures, procedures, modalities|included|5.6.3|5.6.3
+assessment and management of ai systemic risks at union level|documentation|included|5.6.3|5.6.3
+ai office|codes of practice|Encourages and facilitates review and adaptation|5.6.9|5.6.9
+ai office|providers pursuant to paragraph 7|Invites for codes of practice|5.6.10|5.6.10

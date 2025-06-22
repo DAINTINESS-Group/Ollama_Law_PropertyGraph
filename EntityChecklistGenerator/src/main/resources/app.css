@@ -1,0 +1,107 @@
+.checklist-pane {
+  -fx-border-color: blue;
+  -fx-border-width: 2px;
+  -fx-padding: 10px;
+}
+
+.section-header {
+  -fx-font-weight: bold;
+  -fx-underline: true;
+  -fx-font-size: 14px;
+}
+
+.relation-label {
+  -fx-font-weight: bold;
+  -fx-font-size: 12px;
+}
+
+.paragraph-subtitle {
+  -fx-font-style: italic;
+  -fx-padding: 4 0 0 20;
+}
+
+.paragraph-text {
+  -fx-padding: 2 0 8 20;
+  -fx-background-color: #f9f9f9;
+  -fx-border-color: #ddd;
+  -fx-border-width: 1;
+  -fx-background-radius: 4;
+  -fx-border-radius: 4;
+}
+
+.pane-title {
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+}
+
+.canvas-pane {
+  -fx-border-color: blue;
+  -fx-border-width: 2px;
+}
+
+.node-label {
+  -fx-font-size: 12px;
+}
+
+.graph-entity-list {
+  -fx-border-color: blue;
+  -fx-border-width: 2px;
+}
+
+.list-cell:filled:selected {
+  -fx-background-color: #87CEFA;
+}
+
+/* chapter header container */
+.chapter-header {
+  -fx-padding: 2 0 2 0;
+  -fx-line-spacing: 1;
+}
+
+/* bold the number, small size */
+.chapter-num {
+  -fx-font-weight: bold;
+  -fx-font-size: 13px;
+}
+
+/* normal weight title, same size */
+.chapter-title {
+  -fx-font-weight: normal;
+  -fx-font-size: 13px;
+}
+
+/* article header container, indented */
+.article-header {
+  -fx-padding: 2 0 2 20;
+  -fx-line-spacing: 1;
+}
+
+/* bold the article number */
+.article-num {
+  -fx-font-weight: bold;
+  -fx-font-size: 12px;
+}
+
+/* normal weight article title */
+.article-title {
+  -fx-font-weight: normal;
+  -fx-font-size: 12px;
+}
+
+/* paragraph number, further indent and bold */
+.paragraph-number {
+  -fx-font-size: 11px;
+  -fx-font-weight: bold;
+  -fx-padding: 2 0 4 40;
+}
+
+/* the container around the snippet text */
+.snippet-box {
+  -fx-background-color: #f9f9f9;
+  -fx-border-color: #ccc;
+  -fx-border-width: 1;
+  -fx-border-radius: 4;
+  -fx-background-radius: 4;
+  -fx-padding: 8;
+  -fx-margin: 0 0 12 0;
+}

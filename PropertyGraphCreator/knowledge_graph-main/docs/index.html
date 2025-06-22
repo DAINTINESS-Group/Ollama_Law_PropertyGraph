@@ -1,0 +1,558 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/css/tom-select.min.css" integrity="sha512-43fHB3GLgZfz8QXl1RPQ8O66oIgv3po9cJ5erMt1c4QISq9dYb195T3vr5ImnJPXuVroKcGBPXBFKETW8jrPNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/js/tom-select.complete.js" integrity="sha512-jeF9CfnvzDiw9G9xiksVjxR2lib44Gnovvkv+3CgCG6NXCD4gqlA5nDAVW5WjpA+i+/zKsUWV5xNEbW1X/HH0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 900px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+                <div id="select-menu" class="card-header">
+                    <div class="row no-gutters">
+                        <div class="col-10 pb-2">
+                            <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="selectNode([value]);"
+                            id="select-node"
+                            placeholder="Select node..."
+                            >
+                                <option selected>Select a Node by ID</option>
+                                
+                                    <option value="ai office">ai office</option>
+                                
+                                    <option value="codes of practice">codes of practice</option>
+                                
+                                    <option value="issues: (a), (b), (c), (d)">issues: (a), (b), (c), (d)</option>
+                                
+                                    <option value="providers pursuant to paragraph 7">providers pursuant to paragraph 7</option>
+                                
+                                    <option value="providers of general-purpose ai models">providers of general-purpose ai models</option>
+                                
+                                    <option value="ai systemic risks at union level">ai systemic risks at union level</option>
+                                
+                                    <option value="identification">identification</option>
+                                
+                                    <option value="sources">sources</option>
+                                
+                                    <option value="article 51">article 51</option>
+                                
+                                    <option value="general-purpose ai models with systemic risk">general-purpose ai models with systemic risk</option>
+                                
+                                    <option value="article 53(1), points (a) and (b)">article 53(1), points (a) and (b)</option>
+                                
+                                    <option value="information">information</option>
+                                
+                                    <option value="article 78">article 78</option>
+                                
+                                    <option value="confidentiality obligations set out in article 78">confidentiality obligations set out in article 78</option>
+                                
+                                    <option value="articles 53 and 55">articles 53 and 55</option>
+                                
+                                    <option value="assessment and management of ai systemic risks at union level">assessment and management of ai systemic risks at union level</option>
+                                
+                                    <option value="documentation">documentation</option>
+                                
+                                    <option value="measures, procedures, modalities">measures, procedures, modalities</option>
+                                
+                                    <option value="authorised representative">authorised representative</option>
+                                
+                                    <option value="ai office or national competent authorities">ai office or national competent authorities</option>
+                                
+                                    <option value="provider">provider</option>
+                                
+                                    <option value="commission">commission</option>
+                                
+                                    <option value="article 97">article 97</option>
+                                
+                                    <option value="delegated acts">delegated acts</option>
+                                
+                                    <option value="general-purpose ai model presenting systemic risks">general-purpose ai model presenting systemic risks</option>
+                                
+                                    <option value="list of general-purpose ai models with systemic risk">list of general-purpose ai models with systemic risk</option>
+                                
+                                    <option value="general-purpose ai model">general-purpose ai model</option>
+                                
+                                    <option value="cumulative amount of computation used for training">cumulative amount of computation used for training</option>
+                                
+                                    <option value="free and open licence">free and open licence</option>
+                                
+                                    <option value="providers of ai models">providers of ai models</option>
+                                
+                                    <option value="paragraph 1, point (a)">paragraph 1, point (a)</option>
+                                
+                                    <option value="general-purpose ai models">general-purpose ai models</option>
+                                
+                                    <option value="systemic risks">systemic risks</option>
+                                
+                                    <option value="providers established in third countries">providers established in third countries</option>
+                                
+                                    <option value="authorised representative established in the union">authorised representative established in the union</option>
+                                
+                                    <option value="european harmonised standard">european harmonised standard</option>
+                                
+                                    <option value="harmonised standard">harmonised standard</option>
+                                
+                                    <option value="national competent authorities">national competent authorities</option>
+                                
+                                    <option value="providers of ai systems">providers of ai systems</option>
+                                
+                                    <option value="state of the art technologies">state of the art technologies</option>
+                                
+                                    <option value="sufficiently detailed summary about the content used for training of the general-purpose ai model">sufficiently detailed summary about the content used for training of the general-purpose ai model</option>
+                                
+                                    <option value="systemic risk">systemic risk</option>
+                                
+                                    <option value="providers who are not in compliance with an approved code of practice">providers who are not in compliance with an approved code of practice</option>
+                                
+                                    <option value="alternative adequate means of compliance">alternative adequate means of compliance</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-2 pb-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+                  new TomSelect("#select-node",{
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      }
+                  });
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"group": 1, "id": "ai office", "label": "ai office", "shape": "dot", "size": 4}, {"group": 1, "id": "codes of practice", "label": "codes of practice", "shape": "dot", "size": 2}, {"group": 1, "id": "issues: (a), (b), (c), (d)", "label": "issues: (a), (b), (c), (d)", "shape": "dot", "size": 1}, {"group": 1, "id": "providers pursuant to paragraph 7", "label": "providers pursuant to paragraph 7", "shape": "dot", "size": 1}, {"group": 12, "id": "providers of general-purpose ai models", "label": "providers of general-purpose ai models", "shape": "dot", "size": 8}, {"group": 3, "id": "ai systemic risks at union level", "label": "ai systemic risks at union level", "shape": "dot", "size": 2}, {"group": 3, "id": "identification", "label": "identification", "shape": "dot", "size": 1}, {"group": 3, "id": "sources", "label": "sources", "shape": "dot", "size": 1}, {"group": 5, "id": "article 51", "label": "article 51", "shape": "dot", "size": 1}, {"group": 5, "id": "general-purpose ai models with systemic risk", "label": "general-purpose ai models with systemic risk", "shape": "dot", "size": 1}, {"group": 6, "id": "article 53(1), points (a) and (b)", "label": "article 53(1), points (a) and (b)", "shape": "dot", "size": 1}, {"group": 6, "id": "information", "label": "information", "shape": "dot", "size": 1}, {"group": 7, "id": "article 78", "label": "article 78", "shape": "dot", "size": 1}, {"group": 7, "id": "confidentiality obligations set out in article 78", "label": "confidentiality obligations set out in article 78", "shape": "dot", "size": 1}, {"group": 1, "id": "articles 53 and 55", "label": "articles 53 and 55", "shape": "dot", "size": 1}, {"group": 9, "id": "assessment and management of ai systemic risks at union level", "label": "assessment and management of ai systemic risks at union level", "shape": "dot", "size": 2}, {"group": 9, "id": "documentation", "label": "documentation", "shape": "dot", "size": 1}, {"group": 9, "id": "measures, procedures, modalities", "label": "measures, procedures, modalities", "shape": "dot", "size": 1}, {"group": 2, "id": "authorised representative", "label": "authorised representative", "shape": "dot", "size": 2}, {"group": 2, "id": "ai office or national competent authorities", "label": "ai office or national competent authorities", "shape": "dot", "size": 1}, {"group": 2, "id": "provider", "label": "provider", "shape": "dot", "size": 1}, {"group": 8, "id": "commission", "label": "commission", "shape": "dot", "size": 5}, {"group": 8, "id": "article 97", "label": "article 97", "shape": "dot", "size": 1}, {"group": 8, "id": "delegated acts", "label": "delegated acts", "shape": "dot", "size": 1}, {"group": 8, "id": "general-purpose ai model presenting systemic risks", "label": "general-purpose ai model presenting systemic risks", "shape": "dot", "size": 1}, {"group": 8, "id": "list of general-purpose ai models with systemic risk", "label": "list of general-purpose ai models with systemic risk", "shape": "dot", "size": 1}, {"group": 11, "id": "general-purpose ai model", "label": "general-purpose ai model", "shape": "dot", "size": 3}, {"group": 11, "id": "cumulative amount of computation used for training", "label": "cumulative amount of computation used for training", "shape": "dot", "size": 1}, {"group": 13, "id": "free and open licence", "label": "free and open licence", "shape": "dot", "size": 1}, {"group": 13, "id": "providers of ai models", "label": "providers of ai models", "shape": "dot", "size": 1}, {"group": 11, "id": "paragraph 1, point (a)", "label": "paragraph 1, point (a)", "shape": "dot", "size": 1}, {"group": 14, "id": "general-purpose ai models", "label": "general-purpose ai models", "shape": "dot", "size": 1}, {"group": 14, "id": "systemic risks", "label": "systemic risks", "shape": "dot", "size": 1}, {"group": 10, "id": "providers established in third countries", "label": "providers established in third countries", "shape": "dot", "size": 1}, {"group": 10, "id": "authorised representative established in the union", "label": "authorised representative established in the union", "shape": "dot", "size": 1}, {"group": 12, "id": "european harmonised standard", "label": "european harmonised standard", "shape": "dot", "size": 1}, {"group": 12, "id": "harmonised standard", "label": "harmonised standard", "shape": "dot", "size": 1}, {"group": 12, "id": "national competent authorities", "label": "national competent authorities", "shape": "dot", "size": 1}, {"group": 12, "id": "providers of ai systems", "label": "providers of ai systems", "shape": "dot", "size": 1}, {"group": 12, "id": "state of the art technologies", "label": "state of the art technologies", "shape": "dot", "size": 1}, {"group": 12, "id": "sufficiently detailed summary about the content used for training of the general-purpose ai model", "label": "sufficiently detailed summary about the content used for training of the general-purpose ai model", "shape": "dot", "size": 1}, {"group": 12, "id": "systemic risk", "label": "systemic risk", "shape": "dot", "size": 1}, {"group": 4, "id": "providers who are not in compliance with an approved code of practice", "label": "providers who are not in compliance with an approved code of practice", "shape": "dot", "size": 1}, {"group": 4, "id": "alternative adequate means of compliance", "label": "alternative adequate means of compliance", "shape": "dot", "size": 1}]);
+                  edges = new vis.DataSet([{"from": "ai office", "label": "Encourages and Facilitates Drawing Up at Union Level,ensure coverage of obligations provided for in Articles 53 and 55,Encourages and facilitates review and adaptation", "paragraph_id": "5.6.2,5.6.3,5.6.9", "to": "codes of practice", "width": 3.0}, {"from": "ai office", "label": "cover", "paragraph_id": "5.6.3", "to": "issues: (a), (b), (c), (d)", "width": 1.0}, {"from": "ai office", "label": "Invites for codes of practice", "paragraph_id": "5.6.10", "to": "providers pursuant to paragraph 7", "width": 1.0}, {"from": "ai office", "label": "Required to provide technical documentation upon request", "paragraph_id": "5.3.2", "to": "providers of general-purpose ai models", "width": 1.0}, {"from": "ai systemic risks at union level", "label": "included", "paragraph_id": "5.6.3", "to": "identification", "width": 1.0}, {"from": "ai systemic risks at union level", "label": "identified", "paragraph_id": "5.6.3", "to": "sources", "width": 1.0}, {"from": "article 51", "label": "Classification as", "paragraph_id": "5.1.1", "to": "general-purpose ai models with systemic risk", "width": 1.0}, {"from": "article 53(1), points (a) and (b)", "label": "keeping up to date", "paragraph_id": "5.6.3", "to": "information", "width": 1.0}, {"from": "article 78", "label": "Applies to", "paragraph_id": "5.5.4", "to": "confidentiality obligations set out in article 78", "width": 1.0}, {"from": "articles 53 and 55", "label": "coverage", "paragraph_id": "5.6.3", "to": "codes of practice", "width": 1.0}, {"from": "assessment and management of ai systemic risks at union level", "label": "included", "paragraph_id": "5.6.3", "to": "documentation", "width": 1.0}, {"from": "assessment and management of ai systemic risks at union level", "label": "included", "paragraph_id": "5.6.3", "to": "measures, procedures, modalities", "width": 1.0}, {"from": "authorised representative", "label": "Addressed on all issues related to ensuring compliance with this Regulation.", "paragraph_id": "5.4.5", "to": "ai office or national competent authorities", "width": 1.0}, {"from": "authorised representative", "label": "Terminates mandate due to contrary actions", "paragraph_id": "5.4.6", "to": "provider", "width": 1.0}, {"from": "commission", "label": "Shall adopt delegated acts in accordance with", "paragraph_id": "5.1.4", "to": "article 97", "width": 1.0}, {"from": "commission", "label": "Adopts", "paragraph_id": "5.1.4", "to": "delegated acts", "width": 1.0}, {"from": "commission", "label": "Designates ex officio or following a qualified alert from the scientific panel pursuant to Article 90(1), point (a)", "paragraph_id": "5.2.5", "to": "general-purpose ai model presenting systemic risks", "width": 1.0}, {"from": "commission", "label": "Publishes and keeps up to date", "paragraph_id": "5.2.7", "to": "list of general-purpose ai models with systemic risk", "width": 1.0}, {"from": "commission", "label": "Notifies,Systemic risks identified by", "paragraph_id": "5.2.2,5.2.2", "to": "general-purpose ai model", "width": 2.0}, {"from": "cumulative amount of computation used for training", "label": "Exceeds 10^25 FLOPs", "paragraph_id": "5.1.3", "to": "general-purpose ai model", "width": 1.0}, {"from": "free and open licence", "label": "Released under", "paragraph_id": "5.3.3", "to": "providers of ai models", "width": 1.0}, {"from": "general-purpose ai model", "label": "Has high impact capabilities (presumptively)", "paragraph_id": "5.1.3", "to": "paragraph 1, point (a)", "width": 1.0}, {"from": "general-purpose ai models", "label": "Exceptions do not apply to", "paragraph_id": "5.3.3", "to": "systemic risks", "width": 1.0}, {"from": "providers established in third countries", "label": "Appoints by written mandate", "paragraph_id": "5.4.2", "to": "authorised representative established in the union", "width": 1.0}, {"from": "providers of general-purpose ai models", "label": "Presumed compliance", "paragraph_id": "5.3.5", "to": "european harmonised standard", "width": 1.0}, {"from": "providers of general-purpose ai models", "label": "Reliance until publication", "paragraph_id": "5.3.5", "to": "harmonised standard", "width": 1.0}, {"from": "providers of general-purpose ai models", "label": "Required to provide technical documentation upon request", "paragraph_id": "5.3.2", "to": "national competent authorities", "width": 1.0}, {"from": "providers of general-purpose ai models", "label": "Required to have a good understanding and comply with obligations pursuant to this Regulation", "paragraph_id": "5.3.2", "to": "providers of ai systems", "width": 1.0}, {"from": "providers of general-purpose ai models", "label": "Required to identify and comply with reservations of rights expressed pursuant to Article 4(3) of Directive (EU) 2019/790", "paragraph_id": "5.3.2", "to": "state of the art technologies", "width": 1.0}, {"from": "providers of general-purpose ai models", "label": "Required to be made publicly available according to a template provided by the AI Office", "paragraph_id": "5.3.2", "to": "sufficiently detailed summary about the content used for training of the general-purpose ai model", "width": 1.0}, {"from": "providers of general-purpose ai models", "label": "Obligations for", "paragraph_id": "5.5.1", "to": "systemic risk", "width": 1.0}, {"from": "providers who are not in compliance with an approved code of practice", "label": "Demonstration for approval by the Commission", "paragraph_id": "5.3.5", "to": "alternative adequate means of compliance", "width": 1.0}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.015,
+            "damping": 0.4,
+            "gravitationalConstant": -31,
+            "springConstant": 0.08,
+            "springLength": 100
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+                    network.on("selectNode", neighbourhoodHighlight);
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
+    <script type="text/javascript">
+        function deleteNode() {
+            var selectedNodes = network.getSelectedNodes();
+            if (selectedNodes.length === 0) {
+                alert("Please select a node to delete.");
+                return;
+            }
+
+            // Remove selected nodes and their edges
+            network.body.data.nodes.remove(selectedNodes);
+            network.body.data.edges.remove(network.getConnectedEdges(selectedNodes[0]));
+
+            alert("Node and connected edges deleted!");
+        }
+
+        // Add a delete button dynamically
+        var deleteButton = document.createElement("button");
+        deleteButton.innerHTML = "Delete Selected Node";
+        deleteButton.onclick = deleteNode;
+        deleteButton.style.position = "absolute";
+        deleteButton.style.top = "10px";
+        deleteButton.style.right = "10px";
+        deleteButton.style.padding = "10px";
+        deleteButton.style.backgroundColor = "#ff4d4d";
+        deleteButton.style.color = "white";
+        deleteButton.style.border = "none";
+        deleteButton.style.cursor = "pointer";
+        document.body.appendChild(deleteButton);
+
+        function saveGraph() {
+            var nodes = network.body.data.nodes.get(); // Get remaining nodes
+            var edges = network.body.data.edges.get(); // Get remaining edges
+
+            var graphData = {
+                edges: edges.map(edge => ({
+                    "node_1": edge.from,
+                    "node_2": edge.to,
+                    "edge": edge.label || "relationship"
+                }))
+            };
+
+            // Convert to JSON and trigger file download
+            var blob = new Blob([JSON.stringify(graphData, null, 2)], { type: "application/json" });
+            var a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "final_graph.json";
+            a.click();
+        }
+
+        // Add a "Save Graph" button dynamically
+        var saveButton = document.createElement("button");
+        saveButton.innerHTML = "Save Graph";
+        saveButton.onclick = saveGraph;
+        saveButton.style.position = "absolute";
+        saveButton.style.top = "50px";  // Adjusted to avoid overlapping
+        saveButton.style.right = "10px";
+        saveButton.style.padding = "10px";
+        saveButton.style.backgroundColor = "#4CAF50";
+        saveButton.style.color = "white";
+        saveButton.style.border = "none";
+        saveButton.style.cursor = "pointer";
+        document.body.appendChild(saveButton);
+    </script>
+    

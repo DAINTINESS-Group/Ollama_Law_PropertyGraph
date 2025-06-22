@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:y="http://www.yworks.com/xml/graphml">
+  <key attr.name="label" attr.type="string" for="node" id="d0"/>
+  <key attr.name="label" attr.type="string" for="edge" id="d1"/>
+  <key attr.name="paragraph_id" attr.type="string" for="edge" id="d2"/>
+  <graph edgedefault="directed">
+    <node id="n1">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>Test Node 1</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n2">
+      <data key="d0">
+        <y:ShapeNode>
+          <y:NodeLabel>Test Node 2</y:NodeLabel>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <edge source="n1" target="n2">
+      <data key="d1">
+        <y:PolyLineEdge>
+          <y:EdgeLabel>connects</y:EdgeLabel>
+        </y:PolyLineEdge>
+      </data>
+      <data key="d2">p1</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:y="http://www.yworks.com/xml/graphml">
+  <key id="d0" for="node" attr.name="label" attr.type="string"/>
+  <key id="d1" for="edge" attr.name="label" attr.type="string"/>
+  <key id="d2" for="edge" attr.name="paragraph_id" attr.type="string"/>
+  <graph edgedefault="directed">
+    <node id="n0">
+      <data key="d0">Node A</data>
+    </node>
+    <node id="n1">
+      <data key="d0">Node B</data>
+    </node>
+    <edge source="n0" target="n1">
+      <data key="d1">relates to</data>
+      <data key="d2">para-99</data>
+    </edge>
+  </graph>
+</graphml>

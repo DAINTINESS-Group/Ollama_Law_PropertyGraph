@@ -1,0 +1,5 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <graph edgedefault="directed">
+    <node id="n0">
+      <data key="d0">Start</data>
+    <!-- Missing data, should recognize invalid structure -->
